@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', 'CommentController@index');
+Route::get('/normal', 'CommentController@normal');
